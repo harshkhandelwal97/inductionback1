@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+    /* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #cf4141;
+    margin: 0;
+}
+
+/* Form styles */
+.loginform {
+    margin-top: 10%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 13px;
+    box-shadow: 0 0 10px rgba(173, 64, 64, 0.1);
+    padding: 20px;
+    position: relative;
+}
+
+.loginform img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.loginform h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-floating {
+    margin-bottom: 1rem;
+}
+
+/* Button styles */
+button.loginform2 {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.loginform2:hover {
+    background-color: #0056b3;
+}
+
+/* Bootstrap overrides */
+.dropdown-menu {
+    background-color: #343a40;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #007bff;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Header styles */
+.header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight:bold;
+}
+</style>
+<body class="inductionlogin">
+    <div class="wrapper">
+        <header class="header">
+            <h2 class="progress-text">Save your Progress</h2>
+        </header>
+
+        <main class="loginform">
+            <form>
+                <img class="loginform1" src="./images/login.png" alt="" width="150" height="150" style="margin-top: 30%;">
+                <h1 class="h3 mb-3 fw-normal">Login</h1>
+
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+
+                <div class="form-check text-start my-3">
+                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                    </label>
+                </div>
+                <button class="loginform2" type="submit">Log in</button>
+            </form>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Follow us on @Citijan.in</p>
+    </footer>
+
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
