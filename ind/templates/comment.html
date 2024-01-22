@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Progress Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .calendar {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        .progress-view {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .comment-section {
+            margin-top: 20px;
+        }
+
+        .comment-textarea {
+            width: 100%;
+            box-sizing: border-box;
+            height: 80px;
+        }
+
+        .like-button {
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h2>Employee Progress Viewer</h2>
+    </header>
+
+    <div class="calendar">
+        <label for="progress-date">Select Date:</label>
+        <input type="date" id="progress-date" name="progress-date">
+    </div>
+
+    <div class="progress-view">
+        <h3>Progress for Selected Date</h3>
+        <p>This is where progress details will be displayed.</p>
+
+        <div class="comment-section">
+            <label for="comment">Add a comment:</label>
+            <textarea id="comment" class="comment-textarea" maxlength="200"></textarea>
+
+            <button class="like-button">Like</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Follow us on @Citijan.in</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./home.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #856060; /* Set a light background color */
+    color: #6c5353; /* Set default text color */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use minimum height of viewport */
+    margin: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+/* Main content styles */
+.home {
+    text-align: center;
+    margin: auto;
+    font-size:larger;
+    font-family:'Times New Roman', Times, serif;
+   font-weight:bold;
+}
+
+/* Calendar styles */
+.calendar {
+    margin:auto;
+    padding: auto;
+    border: 1px solid #2d2525; /* Add a border around the calendar */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    width: 1000px;
+    height: 200px;
+    background-color: #d9d6d6;
+}
+.calendar-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.calendar h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form styles */
+form {
+    text-align: center;
+    margin: auto;
+}
+
+/* Button styles */
+button {
+    display: inline-block;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Adjust padding for a better look */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.wrapper {
+    flex: 1; /* Allow the wrapper to take up remaining space */
+    display: flex;
+    flex-direction: column;
+}
+</style>
+<body>
+    <div class = "wrapper">
+    <header class="header">
+        <h2 class="progress-text">Save your Progress</h2>
+    </header>
+    <div class="home">
+        <h1>Add your work details here</h1>
+    </div>
+    <div class="calendar-container">
+    <div class="calendar">
+        <h1>Select a Date</h1>
+
+        <form>
+            <label for="datepicker">Choose a date:</label>
+            <input type="date" id="datepicker" name="datepicker">
+        </form>
+    </div>  
+</div>
+    <form>
+        <!-- Button with "Enter" text -->
+        <button type="button">Enter</button>
+    </form>
+     
+</div>
+<footer class="footer">
+    <p>&copy; Follow us on @Citijan.in</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Progress</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        textarea, input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>Daily Progress</h2>
+
+<form action="/submit" method="post" enctype="multipart/form-data">
+    <label for="progress">Enter your progress (up to 200 words):</label>
+    <textarea id="progress" name="progress" rows="4" maxlength="200" required></textarea>
+
+    <label for="image1">Upload Image 1:</label>
+    <input type="file" id="image1" name="image1" accept="image/*">
+
+    <label for="image2">Upload Image 2:</label>
+    <input type="file" id="image2" name="image2" accept="image/*">
+
+    <label for="image3">Upload Image 3:</label>
+    <input type="file" id="image3" name="image3" accept="image/*">
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
