@@ -5,5 +5,6 @@ urlpatterns =[
     path('log/',views.log),
     path('home/',views.home),
     path('progress/',views.progress),
-    path('comments/',views.comment)
+    path('comments/',views.comment),
+ 
 ]
