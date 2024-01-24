@@ -1,3 +1,5 @@
-django
-whitenoise
+# django
+# whitenoise
 
+Django==3.2.8
+whitenoise==5.3.0  # Example: Replace with the version you want
