@@ -70,21 +70,31 @@
 
 <h2>Daily Progress</h2>
 
-<form action="/submit" method="post" enctype="multipart/form-data">
+  <form action="{% url 'saveprogress' %}"method="post" novalidate>
+   {% csrf_token %}
+   <!-- <div class="calendar-container">
+    <div class="calendar">
+        <h1>Select a Date</h1>
+        <form>
+            <label for="datepicker">Choose a date:</label>
+            <input type="date" id="datepicker" name="datepicker">
+        </form>
+    </div>
+</div> -->
+    <input type="text" id="progress" name="progress" rows="4" maxlength="200" required></textarea>
     <label for="progress">Enter your progress (up to 200 words):</label>
-    <textarea id="progress" name="progress" rows="4" maxlength="200" required></textarea>
-
+    
+    <input type="file" id="image1" name="image1" accept="image/*" required>
     <label for="image1">Upload Image 1:</label>
-    <input type="file" id="image1" name="image1" accept="image/*">
 
+    
+    <input type="file" id="image2" name="image2" accept="image/*" required>
     <label for="image2">Upload Image 2:</label>
-    <input type="file" id="image2" name="image2" accept="image/*">
 
+    <input type="file" id="image3" name="image3" accept="image/*" required>
     <label for="image3">Upload Image 3:</label>
-    <input type="file" id="image3" name="image3" accept="image/*">
-
+    
     <button type="submit">Submit</button>
 </form>
-
 </body>
 </html>

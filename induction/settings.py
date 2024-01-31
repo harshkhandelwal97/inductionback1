@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ind',
+    
+
 ]
 
 MIDDLEWARE = [
@@ -66,6 +68,8 @@ TEMPLATES = [
         },
     },
 ]
+# AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
+
 
 WSGI_APPLICATION = 'induction.wsgi.application'
 

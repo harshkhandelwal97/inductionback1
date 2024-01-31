@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./home.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -12,7 +11,6 @@
     body, h1, h2, h3, p, button {
     margin: 0;
     padding: 0;
-    
 }
 
 /* Body styles */
@@ -20,7 +18,7 @@ body {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #856060; /* Set a light background color */
+    background-color: #ffffff; /* Set a light background color */
     color: #6c5353; /* Set default text color */
 }
 body {
@@ -45,7 +43,7 @@ body {
     margin: auto;
     font-size:larger;
     font-family:'Times New Roman', Times, serif;
-   font-weight:bold;
+    font-weight:bold;
 }
 
 /* Calendar styles */
@@ -62,7 +60,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
 
 .calendar h1 {
     font-size: 24px;
@@ -90,6 +87,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     width: 200px;
+    margin-bottom: 10px; /* Add margin at the bottom */
 }
 
 button:hover {
@@ -103,38 +101,53 @@ button:hover {
     text-align: center;
     padding: 10px 0;
 }
+
 .wrapper {
-    flex: 1; /* Allow the wrapper to take up remaining space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
 }
+
+/* Additional styles for links */
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Add margin at the top */
+}
 </style>
 <body>
-    <div class = "wrapper">
-    <header class="header">
-        <h2 class="progress-text">Save your Progress</h2>
-    </header>
-    <div class="home">
-        <h1>Add your work details here</h1>
+    <div class="wrapper">
+        <header class="header">
+            <h2 class="progress-text">Save your Progress</h2>
+        </header>
+        <div class="home">
+            <h1>Add your work details here</h1>
+        </div>
+        <!-- <div class="calendar-container">
+            <div class="calendar">
+                <h1>Select a Date</h1>
+                <form>
+                    <label for="datepicker">Choose a date:</label>
+                    <input type="date" id="datepicker" name="datepicker">
+                </form>
+            </div>
+        </div> -->
+        <!-- <form method="post" action="{% url 'redirect_to_progress' %}">
+            {% csrf_token %}
+            Button with "Enter" text -->
+            
+        <!-- </form>  -->
+        <div class="links">
+            <a href="{% url 'comments' %}">
+                <button type="button">Comments Section</button>
+            </a>
+            <a href="{% url 'progress' %}">
+                <button type="button">Progress Page</button>
+            </a>
+        </div>
     </div>
-    <div class="calendar-container">
-    <div class="calendar">
-        <h1>Select a Date</h1>
-
-        <form>
-            <label for="datepicker">Choose a date:</label>
-            <input type="date" id="datepicker" name="datepicker">
-        </form>
-    </div>  
-</div>
-    <form>
-        <!-- Button with "Enter" text -->
-        <button type="button">Enter</button>
-    </form>
-     
-</div>
-<footer class="footer">
-    <p>&copy; Follow us on @Citijan.in</p>
-</footer>
+    <footer class="footer">
+        <p>&copy; Follow us on @Citijan.in</p>
+    </footer>
 </body>
 </html>
