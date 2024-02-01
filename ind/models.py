@@ -14,12 +14,12 @@ class UserProfile(models.Model):
 class Member(models.Model):
     date = models.DateField()
     description = models.CharField(max_length=200,blank = False)
-    image1 = models.ImageField(upload_to='images/',blank =True)
-    image2 = models.ImageField(upload_to='images/',blank=True)
-    image3 = models.ImageField(upload_to='images/',blank = True)
+    # image1 = models.ImageField(upload_to='images/',blank =True)
+    # image2 = models.ImageField(upload_to='images/',blank=True)
+    # image3 = models.ImageField(upload_to='images/',blank = True)
 
-    def __str__(self):
-        return f"Member {self.id}"
+    # def __str__(self):
+    #     return f"Member {self.id}"
     
 # class Comment(models.Model):
 #     post = models.ForeignKey(Post, on_delete=models.CASCADE)
